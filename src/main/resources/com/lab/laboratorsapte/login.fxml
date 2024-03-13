@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lab.laboratorsapte.controller.LoginController">
+  <tabs>
+    <Tab styleClass="tab-fifa" text="Login">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                   <ImageView fx:id="imageView" fitHeight="373.0" fitWidth="600.0" layoutY="-1.0" pickOnBounds="true">
+                       <image>
+                           <Image url="@TabImage.png" />
+                       </image>
+                   </ImageView>
+                  <Label fx:id="label" layoutX="201.0" layoutY="44.0" text="Welcome">
+                     <font>
+                        <Font size="48.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="idField" layoutX="226.0" layoutY="148.0" promptText="ID" />
+                  <TextField fx:id="password" layoutX="227.0" layoutY="186.0" promptText="Password" />
+                  <Button fx:id="loginButton" layoutX="274.0" layoutY="232.0" mnemonicParsing="false" onAction="#handleLogin" styleClass="complex-glow" text="LOGIN" />
+                  <Button fx:id="exitButton" layoutX="503.0" layoutY="303.0" mnemonicParsing="false" onAction="#handleCancel" styleClass="complex-glow" text="EXIT" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab styleClass="tab-fifa" text="Sign Up">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                   <ImageView fx:id="imageView2" fitHeight="373.0" fitWidth="600.0" layoutY="-1.0" pickOnBounds="true">
+                       <image>
+                           <Image url="@TabImage.png" />
+                       </image>
+                   </ImageView>
+                  <Button layoutX="364.0" layoutY="54.0" mnemonicParsing="false" prefHeight="115.0" prefWidth="130.0" styleClass="complex-glow" text="SIGN UP!" onAction="#handleSignUp"/>
+                  <Button layoutX="364.0" layoutY="187.0" mnemonicParsing="false" prefHeight="120.0" prefWidth="130.0" styleClass="complex-glow" text="EXIT" onAction="#handleCancel"/>
+                  <TextField fx:id="idS" layoutX="77.0" layoutY="51.0" promptText="ID" />
+                  <TextField fx:id="fnS" layoutX="77.0" layoutY="112.0" promptText="First Name" />
+                  <TextField fx:id="lnS" layoutX="77.0" layoutY="169.0" promptText="Last Name" />
+                  <TextField fx:id="emS" layoutX="77.0" layoutY="227.0" promptText="Email" />
+                  <TextField fx:id="paS" layoutX="77.0" layoutY="281.0" promptText="Password" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
