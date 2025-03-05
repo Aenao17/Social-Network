@@ -23,6 +23,7 @@ It is a **Java-based social networking application** featuring **real-time messa
 3️⃣ **User Account Creation** - Registering a new account  
 4️⃣ **Friend Request System** - Sending and accepting requests  
 5️⃣ **Live Chat** - Messaging between users, visible in both windows thanks to the **Observer Pattern** 
+
 🔹 **Admin ID:** `1` (pre-configured)
 
 https://github.com/Aenao17/Social-Network/assets/131599239/9e00506a-6d5b-4a9e-8622-8a0aaf9586b1
